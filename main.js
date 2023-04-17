@@ -10,7 +10,7 @@ window.onload = function () {
   console.warn("Log warn");
   console.table(["Osama", "Ahmed", "Sara"]);
 
-  /* 
+  /*
   styling console
   Directive %c
   this will target a spacific text in our string in the console log and we can apply styling to it
