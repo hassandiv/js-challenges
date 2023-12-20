@@ -1,8 +1,8 @@
 /*
 Reverse string
-example: 
-apple => "elppa"
-greetings => "sgniteerg"
+example:
+apple => elppa
+greetings => sgniteerg
 */
 
 /* Solution 1
