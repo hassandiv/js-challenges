@@ -22,6 +22,5 @@ const maxChar = (str) => {
 		}
 	}
 	console.log(`${maxChar} appears ${maxNum} times`);
-	//
 };
 maxChar("#%he3#33l3l#l#3xox");
