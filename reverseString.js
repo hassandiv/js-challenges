@@ -24,3 +24,13 @@ console.log("result", result);
 2 - loop through each character
 3 - return the reversed
 */
+
+(function (str) {
+	let reversed = "";
+	for (let character of str) {
+		reversed = character + reversed;
+	}
+	console.log({
+		reversed_value: reversed,
+	});
+})("Greetings!");
