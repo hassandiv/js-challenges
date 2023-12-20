@@ -1,3 +1,5 @@
+//solve the palindrome
+
 const Palindrome = (str) => {
 	const isPalindrome = str.split("").reverse().join("");
 	return str === isPalindrome;
