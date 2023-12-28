@@ -6,11 +6,11 @@
 
 const maxChar = (str) => {
 	let obj = {};
-
 	for (let x of str) {
 		!obj[x] ? (obj[x] = 1) : obj[x]++;
 	}
 	console.log("obj", obj);
+	console.log("obj", JSON.stringify(obj));
 
 	let maxNum = 0;
 	let maxChar = "";
