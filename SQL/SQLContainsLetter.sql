@@ -19,7 +19,7 @@
 -- 5	Mark Anderson
 
 
-SELECT * FROM employee_data WHERE full_name LIKE '%A%'
+SELECT * FROM employee_data WHERE full_name LIKE '%A%';
 
 -- This query will return the following result:
 
