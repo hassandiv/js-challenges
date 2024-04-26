@@ -21,7 +21,7 @@
 
 SELECT c.customer_name, COUNT(o.order_id) AS total_orders
 FROM customer c
-JOIN orders o ON c.cusomter_id = o.customer_id
+JOIN orders o ON c.customer_id = o.customer_id
 GROUP BY c.customer_name
 
 -- This query will return the following result:
