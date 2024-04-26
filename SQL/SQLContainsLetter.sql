@@ -20,3 +20,12 @@
 
 
 SELECT * FROM employee_data WHERE full_name LIKE '%A%'
+
+-- This query will return the following result:
+
+-- employee_id	full_name
+-- 2	Alice Johnson
+-- 3	Bob Adams
+-- 4	Emily Parker
+-- 5	Mark Anderson
+-- Explanation: This query selects all rows from the employee_data table where the full_name column contains the letter 'A'.
