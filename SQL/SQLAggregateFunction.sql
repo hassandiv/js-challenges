@@ -17,7 +17,6 @@
 SELECT AVG(salary) AS average_salary FROM employees;
 
 -- Result:
-
--- average_price
+-- average_salary
 -- 57000
 -- This query calculates the average price of products in the products table.
