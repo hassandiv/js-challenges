@@ -20,6 +20,7 @@ function BracketCombinations(num) {
 		let k = 1;
 		for (var i = n; i >= 1; i--) {
 			k *= i;
+			//above is same as k = k * i
 		}
 		return k;
 	};
