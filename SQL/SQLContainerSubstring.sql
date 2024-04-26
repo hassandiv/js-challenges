@@ -19,6 +19,5 @@ SELECT * FROM product_names WHERE product_name LIKE '%Smart%';
 
 -- product_id	product_name
 -- 2	Smartphone
--- 5	Wireless Mouse
 -- 7	Smartwatch
 -- Explanation: This query selects all rows from the product_names table where the product_name column contains the substring "Smart". The '%' symbol is a wildcard that matches any sequence of characters.
