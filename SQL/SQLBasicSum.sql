@@ -19,7 +19,8 @@
 -- 4	Product D	75
 -- 5	Product E	125
 
-SELECT SUM(sales_amount) AS sales_total FROM sales_data;
+SELECT SUM(sales_amount) AS sales_total 
+FROM sales_data;
 
 -- This query will return the following result:
 

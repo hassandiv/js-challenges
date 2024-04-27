@@ -14,7 +14,8 @@
 -- 5	Mark	Anderson	Operations	58000
 
 
-SELECT AVG(salary) AS average_salary FROM employees;
+SELECT AVG(salary) AS average_salary 
+FROM employees;
 
 -- Result:
 -- average_salary
