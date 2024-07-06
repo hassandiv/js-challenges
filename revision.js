@@ -32,7 +32,7 @@ const objectExample = { a: [1, 2, 3], 15: "hassan", c: { age: 38 } };
 //Object loop difference between "of" and "in"
 // Using for...of loop
 for (const [key, value] of Object.entries(arguments)) {
-	console.log(`${key} ${value}`); // "a 1,2,3", "b 5,6,7", "c 0,9,8"
+	//console.log(`${key} ${value}`); // "a 1,2,3", "b 5,6,7", "c 0,9,8"
 }
 
 // Using array methods
@@ -58,7 +58,7 @@ for (const [key] in arguments) {
 
 // UNIQUE example using for...in loop returns the indexs of the keys
 for (const key in Object.entries(arguments)) {
-	console.log(`${key}`); // "0", "1", "2"
+	//console.log(`${key}`); // "0", "1", "2"
 }
 
 //Array loop difference between "of" and "in"
@@ -91,6 +91,44 @@ for (let x in stringB) {
 	//console.log("index number of each character", x); //ouput 0, 1, 2, 3, 4, 5, 6 ...etc
 }
 
+//Example 1 String and Object
+const alpha = "abcd";
+let output1 = "";
+const object = { a: "hassan", b: "hussien", c: "mody", v: "kk" };
+let output2 = 0;
+const objectNum = { a: 10, b: 20, c: 30, v: 40 };
+
+for (let char of alpha) {
+	if (char in object) {
+		output1 += object[char];
+		//output1 = output1 + object[char];
+	}
+	if (char in objectNum) {
+		output2 += objectNum[char];
+		//output2 = output2 + objectNum[char];
+	}
+	// else {
+	// 	console.log(char in object, object[char]);
+	// }
+}
+console.log("output example 1", output1, output2);
+
+//Example 2 String and Object
+const words = "I am h and i am a s e";
+let output = "";
+const objectWords = { h: "hassan", s: "software", e: "engineer" };
+
+for (let char of words) {
+	output += char in objectWords ? objectWords[char] : char;
+	//using only equal operator output = char will display the last value because it will override the previous values
+	// if (char in objectWords) {
+	// 	output += objectWords[char];
+	// } else {
+	// 	output += char;
+	// }
+}
+console.log("output example 2", output);
+
 //symbols operators
 // Examples:
 // The Assignment Operator = assigns values
@@ -119,5 +157,9 @@ for (let x in stringB) {
 
 let x = 5;
 let y = 10;
-y = x;
-console.log("y", y);
+
+let c = (x += y); //c = x + y usually used like this x = x + y or x += y
+//console.log("c", c);
+
+y = x; //assign value of x to y using = operator
+//console.log("y", y);
