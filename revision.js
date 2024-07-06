@@ -90,3 +90,34 @@ const stringB = "JavaScript";
 for (let x in stringB) {
 	//console.log("index number of each character", x); //ouput 0, 1, 2, 3, 4, 5, 6 ...etc
 }
+
+//symbols operators
+// Examples:
+// The Assignment Operator = assigns values
+// The Addition Operator + adds values
+// The Multiplication Operator * multiplies values
+// The Comparison Operator > compares values
+
+// Operator	Description
+// +	Addition
+// -	Subtraction
+// *	Multiplication
+// **	Exponentiation (ES2016)
+// /	Division
+// %	Modulus (Division Remainder)
+// ++	Increment
+// --	Decrement
+
+// Operator	Example	Same As
+// =	x = y	x = y
+// +=	x += y	x = x + y
+// -=	x -= y	x = x - y
+// *=	x *= y	x = x * y
+// /=	x /= y	x = x / y
+// %=	x %= y	x = x % y
+// **=	x **= y	x = x ** y
+
+let x = 5;
+let y = 10;
+y = x;
+console.log("y", y);
