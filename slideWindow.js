@@ -15,10 +15,10 @@ function maxSumSubarray(arr, k) {
 	let windowSum = 0; //8
 
 	for (let i = 0; i < k; i++) {
-		maxSum += arr[i];
+		windowSum += arr[i];
 	}
 
-	windowSum = maxSum; //9
+	maxSum = windowSum;
 
 	for (let i = k; i < arr.length; i++) {
 		windowSum += arr[i] - arr[i - k];
@@ -30,3 +30,26 @@ function maxSumSubarray(arr, k) {
 
 console.log(maxSumSubarray([2, 1, 5, 1, 3, 2], 3)); // Output: 9
 console.log(maxSumSubarray([2, 3, 4, 1, 5], 2)); // Output: 7
+
+function minSumSubarray(arr, k) {
+	if (arr.length < k) return null;
+
+	let minSum = 0;
+	let windowSum = 0;
+
+	for (let i = 0; i < k; i++) {
+		windowSum += arr[i];
+	}
+
+	minSum = windowSum;
+
+	for (let i = k; i < arr.length; i++) {
+		windowSum += arr[i] - arr[i - k];
+		minSum = Math.min(minSum, windowSum);
+	}
+
+	return minSum;
+}
+
+console.log(minSumSubarray([2, 1, 5, 1, 3, 2], 3)); // Output: 6
+console.log(minSumSubarray([2, 3, 4, 1, 5], 2)); // Output: 5
